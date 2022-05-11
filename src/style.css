@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  border: black solid 1px;
+  box-shadow: 1px 1px 5px 3px rgba(46, 46, 73, 0.575);
+  width: 40rem;
+  margin-top: 10%;
+  margin-left: 25%;
+  height: 20rem;
+}
+
+main h1 {
+  margin-left: 10px;
+}
+
+.contain {
+  display: flex;
+  width: 95%;
+  margin-left: 5%;
+  gap: 50px;
+}
+
+.recentBock {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+}
+
+.recentScore {
+  position: relative;
+  display: flex;
+  padding-left: 5px;
+  width: 15rem;
+}
+
+button {
+  height: 20px;
+  border: black solid 2px;
+}
+
+.recentBtn {
+  position: absolute;
+  margin-top: 25px;
+  right: 10px;
+}
+
+.names {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: black solid 3px;
+  width: 14.75rem;
+}
+
+.names p {
+  width: 14.75rem;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.grey {
+  background-color: gray;
+}
+
+.AddScore {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+input {
+  border: black 2px solid;
+  outline: none;
+  font-style: italic;
+}
+
+.AddScore input {
+  margin-bottom: 15px;
+}
+
+.submit {
+  border: black solid 3px;
+  width: 5rem;
+  margin-left: 10rem;
+}
+
+/* .container {
+  position: relative;
+  box-shadow: 1px 1px  15px grey;
+  width: 30%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.plan {
+  display: flex;
+  border-bottom: rgba(128, 128, 128, 0.568) 1px solid;
+  font-weight: 100;
+  gap: 65%;
+  padding-left: 3%;
+}
+
+#Input {
+  border: none;
+  font-style: italic;
+  outline: none;
+  border-bottom: rgba(128, 128, 128, 0.568) solid 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 3%;
+  width: 96.5%;
+}
+
+.icn1 {
+  width: 15px;
+  height: 15px;
+  margin-top: 20px;
+}
+
+.icn2 {
+  border: red solid 1px;
+  width: 100px;
+  height: 100px;
+}
+
+.icn3 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  right: 10px;
+  border: red solid 1px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  border-bottom: rgba(128, 128, 128, 0.568) solid 1px;
+  margin-left: -11%;
+  height: 60px;
+}
+
+.description:hover {
+  background-color: rgba(128, 128, 128, 0.247);
+}
+
+#list {
+  margin-top: 0;
+}
+
+.check {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.checked {
+  margin-left: 3%;
+  margin-right: 5%;
+  outline: none;
+}
+
+.trashImg {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  padding-top: 15px;
+}
+
+.dots img {
+  align-items: center;
+  width: 20px;
+}
+
+.dots .trashImg {
+  height: 25px;
+  width: 30px;
+  padding-bottom: 20px;
+}
+
+.checking {
+  width: 95%;
+}
+
+.delete_btn {
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-top: -7%;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.delete_btn:hover {
+  background-color: gray;
+}
+
+.descInput {
+  display: none;
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-top: 10px;
+  margin-top: 15px;
+} */
