@@ -1,5 +1,3 @@
-import _, { remove } from 'lodash';
-// import printMe from './print.js';
 import './style.css';
 
 document.body.innerHTML = `<main class= "mainTag"><h1>Leaderboard</h1>
