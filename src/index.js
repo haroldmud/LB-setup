@@ -1,15 +1,74 @@
 import './style.css';
+import boddyInner from './modules/bodyInner';
 
-document.body.innerHTML = `<main class= "mainTag"><h1>Leaderboard</h1>
-<section class="contain"><div class="recentBock"><div class="recentScore">
-<h2 class="recentHead">Recent Scores</h2>
-<button class="recentBtn">Refresh</button></div>
-<div class="names"><p>name:100</p>
-<p class="grey">name:20</p><p>name:50</p><p class="grey">name:20</p>
-<p>name:78</p><p class="grey">name:125</p><p>name:77</p>
-<p class="grey">name:42</p></div></div>
-<div class="AddScore"><h2>Add your score</h2>
-<input id="Input" type="text" placeholder="Your name">
-<input id="Input" type="text" placeholder="Your score">
-<input type="submit" value="submit" class="submit"></div></section>
-</main>`;
+boddyInner();
+
+//add input and enable submit button
+const nameInput = document.getElementById('nameInput');
+const scoreInput = document.getElementById('scoreInput');
+const submitInput = document.getElementById('submitInput');
+
+
+//push input in array
+submitInput.addEventListener('click', () => {
+    
+    postGames();
+    scoreInput.value = '';
+    nameInput.value = '';
+})
+
+const refreshAll = document.getElementById('refreshBtn');
+
+refreshAll.addEventListener('click', () => {
+    fetchGames();
+})
+
+    //loop added elements and add them in <pContainer> div
+const store = (Leaderboard) => {
+
+    const pContainer = document.getElementById('pContainer');
+    pContainer.innerHTML = '';
+
+    // <pContainer.innerHTML = '';> to not repeate the previous elements after submitting
+     const wrapItems = () => {
+        for(let i=0; i<Leaderboard.length; i += 1) {
+
+            const classOG = () => {
+                if (i%2==0) {
+                    return 'grey';
+                }else {
+                    return 'whiteBG';
+                    }
+            }
+            pContainer.innerHTML += `<p class="${classOG()}">${Leaderboard[i].user} : ${Leaderboard[i].score}</p>`;
+
+        }
+    }
+    wrapItems();
+}
+
+
+
+async function postGames() {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GEy6FALeMWnyj27AvWAG/scores/', {
+        method: 'POST',
+        headers: {'content-type': 'application/json' },
+        body: JSON.stringify({user:nameInput.value, score: scoreInput.value}),
+    });
+    // waits until the request completes...
+    
+  }
+
+async function fetchGames() {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GEy6FALeMWnyj27AvWAG/scores/');
+    const data = response.json().then((res) => {
+        const dataServer = res.result;
+        store(dataServer);
+        console.log(dataServer);
+    })
+}  
+
+
+fetchGames();
+
+
