@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./comingsoon.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  border: rgba(128, 128, 128, 0.123) solid 5px;
+  box-shadow: 0 0 10px 10px rgba(75, 75, 94, 0.575);
+  width: 40rem;
+  margin-top: 8%;
+  margin-left: 25%;
+  height: 25rem;
+}
+
+main h1 {
+  padding-left: 10px;
+  color: rgba(106, 114, 114, 0.514);
+  border-bottom: rgba(128, 128, 128, 0.123) solid 5px;
+}
+
+.contain {
+  display: flex;
+  width: 95%;
+  margin-left: 5%;
+  gap: 50px;
+}
+
+.recentBock {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+}
+
+.recentScore {
+  position: relative;
+  display: flex;
+  padding-left: 5px;
+  width: 15rem;
+}
+
+button {
+  height: 20px;
+  border: black solid 2px;
+}
+
+.recentBtn {
+  position: absolute;
+  margin-top: 25px;
+  right: 10px;
+  font-size: 10px;
+  background-color: transparent;
+}
+
+.recentBtn:hover {
+  color: green;
+}
+
+.names {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: rgba(138, 154, 189, 0.356) solid 3px;
+  width: 14.75rem;
+}
+
+.names p {
+  position: relative;
+  width: 14.75rem;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.grey {
+  background-color: rgba(128, 128, 128, 0.062);
+}
+
+.user {
+  position: absolute;
+  padding-left: 10px;
+}
+
+.num {
+  padding-left: 120px;
+  color: grey;
+}
+
+.AddScore {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: rgba(128, 128, 128, 0.123) solid 1px;
+  outline: none;
+  font-style: italic;
+  transition: 0.5s ease;
+}
+
+input:active {
+  background-color: rgba(0, 128, 0, 0.267);
+}
+
+.AddScore input {
+  margin-bottom: 15px;
+}
+
+.submit {
+  border: rgba(0, 0, 0, 0.178) solid 3px;
+  width: 5rem;
+  margin-left: 10rem;
+  background-color: rgb(224, 217, 207);
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.submit:hover {
+  font-size: 17px;
+  color: rgb(56, 32, 3);
+  height: 2rem;
+  width: 5.5rem;
+}
