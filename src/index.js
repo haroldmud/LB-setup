@@ -22,28 +22,28 @@ const store = (Leaderboard) => {
         }
         return 'whiteBG';
       };
-      pContainer.innerHTML += `<p class="${classOG()}">${Leaderboard[i].user} : ${Leaderboard[i].score}</p>`;
+      pContainer.innerHTML += `<p class="${classOG()}"><span class="user">${Leaderboard[i].user}</span>  <span class="num">${Leaderboard[i].score}</span></p>`;
     }
   };
   wrapItems();
 };
 
-async function postGames() {
+const postGames = async () => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GEy6FALeMWnyj27AvWAG/scores/', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ user: nameInput.value, score: scoreInput.value }),
   });
-}
+};
 
-async function fetchGames() {
+const fetchGames = async () => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GEy6FALeMWnyj27AvWAG/scores/');
   const data = response.json().then((res) => {
     const dataServer = res.result;
     store(dataServer);
     console.log(dataServer);
   });
-}
+};
 
 fetchGames();
 // push input in array
