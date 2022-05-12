@@ -34,7 +34,6 @@ async function postGames() {
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ user: nameInput.value, score: scoreInput.value }),
   });
-    // waits until the request completes...
 }
 
 async function fetchGames() {
