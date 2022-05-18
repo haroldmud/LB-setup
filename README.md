@@ -2,7 +2,7 @@
 
 # App
 
-> To do list project
+> Leaderboard project
 
 ## Built With
 
@@ -46,12 +46,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@haroldmud](https://hargithub.com/haroldmud)
 - Twitter: [@mudosaharold](https://twitter.com/MudosaHarold)
 - LinkedIn: [@haroldmudosa](https://www.linkedin.com/in/harold-mudosa-40124021b/)
-
-<!-- 👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 ## 🤝 Contributing
 
