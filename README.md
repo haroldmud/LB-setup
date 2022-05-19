@@ -12,7 +12,7 @@
 
 <!-- ## Live Demo (if available) -->
 
-<!-- [Live Demo Link](https://livedemo.com) -->
+[Live Demo Link](https://haroldmud.github.io/LB-setup/dist)
 
 ## Getting Started
 
@@ -26,8 +26,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- git clone \<first https://github.com/haroldmud/To-Do-list-project>
-- cd \<first To-Do-list-project>
+- git clone \<first https://github.com/haroldmud/LB-setup>
+- cd \<first LB-setup>
 
 ### Install
 
