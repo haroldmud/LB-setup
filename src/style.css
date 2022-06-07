@@ -77,7 +77,21 @@ button {
   display: flex;
   flex-direction: column;
   border: rgba(138, 154, 189, 0.356) solid 3px;
-  width: 14.75rem;
+  width: 14rem;
+  height: 10rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  display: block;
+  background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
 }
 
 .names p {
